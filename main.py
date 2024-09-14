@@ -12,7 +12,8 @@ import os
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:\\Users\\JVC Store\\Downloads\\data\\data 6\\train.csv")
+    link = "https://www.dropbox.com/scl/fi/zmsidowquuy3sm1ajfgs4/trained.csv?rlkey=ir4e5y4iz8ajx3yqffg950bqg&st=2w81q0oe&dl=1"
+    df = pd.read_csv(link)
     df = df.drop(columns = ['Unnamed: 0','hs_code_2','hs_code_4'])
     documents = []
 
