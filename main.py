@@ -64,8 +64,7 @@ def load_data():
 
 
 def load_llm():
-
-    api_key2 = "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"
+    api_key2 = st.secrets["API"]
 
     llm2 = ChatGroq(model = "llama-3.1-70b-versatile", temperature = 0,api_key = api_key2)
     return llm2
