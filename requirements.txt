@@ -2,5 +2,6 @@ pip==24.0
 streamlit
 langchain
 langchain-google-genai
+langchain-community
 langchain-groq
 rank-bm25
