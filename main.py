@@ -64,9 +64,9 @@ def load_data():
 
 
 def load_llm():
-    api_key2 = st.secrets["API"]
+    st.secrets["API"] = api
 
-    llm2 = ChatGroq(model = "llama-3.1-70b-versatile", temperature = 0,api_key = api_key2)
+    llm2 = ChatGroq(model = "llama-3.1-70b-versatile", temperature = 0,api_key = st.secrets["API"] )
     return llm2
 
 
