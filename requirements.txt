@@ -1,0 +1,6 @@
+pip==24.0
+streamlit
+langchain
+langchain-google-genai
+langchain-groq
+rank-bm25
